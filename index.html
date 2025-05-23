@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Learn Code</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #111827, #1f2937);
+      color: #f9fafb;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #facc15, #f97316);
+      color: #1f2937;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeInDown 1s ease-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: bounce 1s infinite alternate;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid #374151;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h2 {
+      color: #facc15;
+      margin-bottom: 0.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+    .tip-box {
+      background: #1e293b;
+      padding: 1rem;
+      border-left: 5px solid #facc15;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      background: #facc15;
+      color: #1f2937;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #fcd34d;
+      transform: scale(1.05);
+    }
+    .secret {
+      position: fixed;
+      bottom: -100px;
+      right: -100px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      color: transparent;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #facc15;
+      color: #1f2937;
+      padding: 0.6rem 0.9rem;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      display: none;
+      z-index: 999;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    #backToTop:hover {
+      background: #fcd34d;
+      transform: translateY(-5px);
+    }
+    code {
+      background: #374151;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    pre {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #0f172a;
+      color: #cbd5e1;
+    }
+    a {
+      color: #facc15;
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <a href="#top" id="backToTop" title="Back to Top">⬆</a>
+  <header id="top">
+    <h1>How to Learn Code</h1>
+    <h5>Made on 22/5/25</h5>
+    <p>Learn GitHub. Explore tips. Get ready to build.</p>
+  </header>
+
+  <section>
+    <h2>About the Creator</h2>
+    <p>Hello! I'm Raihan, an aspiring web designer and developer who loves sharing useful code and helping others learn how to build websites from scratch. I believe coding should be creative, fun, and something everyone can try. This website is just one step in my journey to share knowledge and encourage others to explore the tech world!</p>
+    <a class="btn" href="https://rn9997.github.io/about-myself-project/" target="_blank">Visit My About Me Page</a>
+  </section>
+
+  <section>
+    <h2>Coding Tips & Tricks</h2>
+    <div class="tip-box"><strong>1. Always use comments in your code!</strong><br><code>&lt;!-- This is a comment in HTML --&gt;</code></div>
+    <div class="tip-box"><strong>2. Test often!</strong><br>Write small pieces of code and test regularly so you catch bugs early.</div>
+    <div class="tip-box"><strong>3. Learn by doing.</strong><br>Practice by copying and modifying examples – that’s the best way to grow.</div>
+    <div class="tip-box"><strong>4. Start simple.</strong><br>Begin with basic HTML like headings, paragraphs, images, and links.</div>
+    <div class="tip-box"><strong>5. Use GitHub for free website hosting.</strong><br>You can use GitHub Pages to make your HTML live on the web!</div>
+  </section>
+
+  <section>
+    <h2>Reusable Code Examples</h2>
+    <p>Here are some useful pieces of HTML/CSS you can copy and use in your own projects:</p>
+    <h3>✅ Cool Button</h3>
+    <pre><code>&lt;a href="#" class="btn"&gt;Click Me!&lt;/a&gt;</code></pre>
+    <h3>✅ Colourful Banner</h3>
+    <pre><code>&lt;div style="background: linear-gradient(to right, #facc15, #f97316); padding: 1rem; color: #1f2937; text-align: center; border-radius: 8px;"&gt;Welcome to My Website!&lt;/div&gt;</code></pre>
+    <h3>✅ Simple Card Box</h3>
+    <pre><code>&lt;div style="background: #1e293b; padding: 1rem; border-radius: 6px; color: white;"&gt;&lt;h3&gt;Title&lt;/h3&gt;&lt;p&gt;This is a paragraph inside a card box.&lt;/p&gt;&lt;/div&gt;</code></pre>
+    <h3>✅ Hidden Button (Easter Egg)</h3>
+    <pre><code>&lt;button onclick="alert('🎉 You found the secret!')" style="background:transparent; color:#facc15; border:none; cursor:pointer;"&gt;Invisible Secret Button&lt;/button&gt;</code></pre>
+  </section>
+
+  <section>
+    <h2>Mini Coding Tutorials</h2>
+    <div class="tip-box"><strong>🔹 Add an Image in HTML</strong><br><pre><code>&lt;img src="image.jpg" alt="Description" width="300" /&gt;</code></pre></div>
+    <div class="tip-box"><strong>🔹 Link to Another Page</strong><br><pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Website&lt;/a&gt;</code></pre></div>
+    <div class="tip-box"><strong>🔹 Create a List</strong><br><pre><code>&lt;ul&gt;\n  &lt;li&gt;Item 1&lt;/li&gt;\n  &lt;li&gt;Item 2&lt;/li&gt;\n&lt;/ul&gt;</code></pre></div>
+    <div class="tip-box"><strong>🔹 Add CSS to Style Text</strong><br><pre><code>&lt;p style="color:lightblue; font-size:20px;"&gt;Styled text&lt;/p&gt;</code></pre></div>
+  </section>
+
+  <section>
+    <h2>Start Coding with GitHub</h2>
+    <ol>
+      <li>Create a GitHub account at <a href="https://github.com" target="_blank">github.com</a>.</li>
+      <li>Click on <strong>"New Repository"</strong> and name it something like <code>learn-code</code>.</li>
+      <li>Upload your <code>index.html</code> file.</li>
+      <li>Go to <strong>Settings &gt; Pages</strong> and enable GitHub Pages by selecting the main branch.</li>
+      <li>Your site will go live at: <code>https://yourusername.github.io/learn-code</code></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Feedback</h2>
+    <p>If you enjoyed this website or have suggestions, let me know!</p>
+    <button class="btn" onclick="getFeedback()">Give Feedback</button>
+  </section>
+
+  <section>
+    <h2>Live HTML & CSS Tester</h2>
+    <p>Write HTML and CSS below and see it in real time in the preview window.</p>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <textarea id="codeInput" placeholder="Type your HTML and CSS here..." style="width: 100%; height: 200px; background: #0f172a; color: #f9fafb; border: 1px solid #374151; padding: 1rem; border-radius: 6px; font-family: monospace; resize: vertical;"></textarea>
+      <iframe id="previewFrame" style="width: 100%; height: 300px; border: 2px solid #facc15; border-radius: 8px; background: white;"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    Made with ☀️ and 💻 by Reginald. Stay coding!
+  </footer>
+
+  <button class="secret" onclick="alert('🕵️ You found the ultra-hidden secret! You are officially a coding ninja.')"></button>
+
+  <script>
+    const backToTop = document.getElementById('backToTop');
+    window.onscroll = () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    function getFeedback() {
+      const feedback = prompt("What do you think about this site?");
+      if (feedback) {
+        console.log("User Feedback:", feedback);
+        alert("Thank you for your feedback!");
+      }
+    }
+
+    const codeInput = document.getElementById('codeInput');
+    const previewFrame = document.getElementById('previewFrame');
+
+    codeInput.addEventListener('input', () => {
+      const userCode = codeInput.value;
+      previewFrame.srcdoc = userCode;
+      localStorage.setItem("userCode", userCode);
+    });
+
+    window.addEventListener('load', () => {
+      const savedCode = localStorage.getItem("userCode");
+      if (savedCode) {
+        codeInput.value = savedCode;
+        previewFrame.srcdoc = savedCode;
+      }
+    });
+  </script>
+<!-- ChatGPT Floating Widget (using your API) -->
+<style>
+  #chatWidget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-family: 'Arial', sans-serif;
+  }
+  #chatToggle {
+    background: #10a37f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  #chatContainer {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: #1f2937;
+    width: 350px;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  #chatHeader {
+    display: flex;
+    align-items: center;
+    background: #0f172a;
+    color: white;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid #374151;
+  }
+  #chatHeader img {
+    width: 24px;
+    height: 24px;
+  }
+  #chatBox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #1e293b;
+    color: white;
+    font-size: 14px;
+  }
+  .chat-message { margin-bottom: 10px; }
+  .chat-user { color: #facc15; font-weight: bold; }
+  .chat-ai { color: #10a37f; font-weight: bold; }
+  #chatInputArea {
+    display: flex;
+    padding: 10px;
+    background: #0f172a;
+    border-top: 1px solid #374151;
+    gap: 8px;
+  }
+  #userInput {
+    flex-grow: 1;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background: #0f172a;
+    color: white;
+  }
+  #sendBtn {
+    background: #facc15;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+<div id="chatWidget">
+  <button id="chatToggle">💬</button>
+  <div id="chatContainer">
+    <div id="chatHeader">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+      <strong>ChatGPT Assistant</strong>
+    </div>
+    <div id="chatBox"></div>
+    <div id="chatInputArea">
+      <input id="userInput" placeholder="Ask me anything..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById("chatToggle");
+  const chatContainer = document.getElementById("chatContainer");
+  const chatBox = document.getElementById("chatBox");
+  const input = document.getElementById("userInput");
+  const sendBtn = document.getElementById("sendBtn");
+
+  toggleBtn.onclick = () => {
+    chatContainer.style.display = chatContainer.style.display === "flex" ? "none" : "flex";
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+  };
+
+  function renderMessage(role, text) {
+    const div = document.createElement("div");
+    div.className = "chat-message";
+    const label = role === "AI" ? "chat-ai" : "chat-user";
+    div.innerHTML = `<span class="${label}">${role}:</span> ${text}`;
+    chatBox.appendChild(div);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+
+  async function askChatGPT() {
+    const message = input.value.trim();
+    if (!message) return;
+
+    renderMessage("You", message);
+    input.value = "";
+
+    const typingDiv = document.createElement("div");
+    typingDiv.textContent = "AI is typing...";
+    chatBox.appendChild(typingDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    try {
+      const response = await fetch("https://chatgpt-api.vercel.app/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+
+      typingDiv.remove();
+
+      if (!response.ok) throw new Error("Server error");
+
+      const data = await response.json();
+      renderMessage("AI", data.reply);
+    } catch (err) {
+      typingDiv.remove();
+      renderMessage("AI", "❌ Something went wrong. Try again later.");
+      console.error(err);
+    }
+  }
+
+  sendBtn.onclick = askChatGPT;
+</script>
+
+
+     
+     
